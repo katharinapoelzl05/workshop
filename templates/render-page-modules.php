@@ -42,6 +42,9 @@ while (have_rows('page_modules')) : the_row();
     case 'blue_background':
       get_template_part('template-parts/flex/layout', 'blue-background'); break;
 
+    case 'headline':
+      get_template_part('template-parts/flex/layout', 'headline'); break;
+
     case 'text_1col':
       get_template_part('template-parts/flex/layout', 'text-1col'); break;
 

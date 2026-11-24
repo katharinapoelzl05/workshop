@@ -203,3 +203,51 @@
     font-size: 11px;
   }
 }
+
+/* Headline */
+.headline {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.headline > .container-lg {
+  max-width: none;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.headline__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 53px;
+  padding: 7px 24px;
+  background: #4c3525;
+  text-align: center;
+}
+
+.headline__title {
+  margin: 0;
+  color: #f8f3e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .headline__inner {
+    min-height: 48px;
+    padding: 7px 16px;
+  }
+
+  .headline__title {
+    font-size: 22px;
+    white-space: normal;
+  }
+}
+
