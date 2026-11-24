@@ -22,6 +22,7 @@ while (have_rows('page_modules')) : the_row();
     'can_you_relate',
     'contact_sheet',
     'linocut',
+    'pottery',
   ];
   $layout_container = in_array($layout_name, $figma_full_width_layouts, true) ? 'none' : get_sub_field('container');
   $layout_padding_y = in_array($layout_name, $figma_full_width_layouts, true) ? 'py-0' : get_sub_field('padding_y');
@@ -84,6 +85,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'linocut':
       get_template_part('template-parts/flex/layout', 'linocut'); break;
+
+    case 'pottery':
+      get_template_part('template-parts/flex/layout', 'pottery'); break;
 
     case 'text_1col':
       get_template_part('template-parts/flex/layout', 'text-1col'); break;
