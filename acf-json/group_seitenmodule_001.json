@@ -1486,6 +1486,55 @@
                     "acfe_flexible_settings_size": "medium",
                     "acfe_flexible_modal_edit_size": false
                 },
+                "layout_images": {
+                    "key": "layout_images",
+                    "name": "images",
+                    "label": "images",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_images_gallery",
+                            "label": "Bilder",
+                            "name": "images",
+                            "aria-label": "",
+                            "type": "gallery",
+                            "instructions": "Ideal: vier Bilder.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg,jpeg,png,webp",
+                            "insert": "append",
+                            "allow_in_bindings": 1,
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": [
+                        "Inhalte"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false
+                },
                 "layout_google_map": {
                     "key": "layout_google_map",
                     "name": "google_map",
@@ -1594,5 +1643,5 @@
             "json"
         ]
     },
-    "modified": 1795544879
+    "modified": 1795545065
 }
