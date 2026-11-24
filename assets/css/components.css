@@ -983,4 +983,140 @@
   }
 }
 
+/* Aquarell */
+.aquarell {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #4c3525;
+}
+
+.aquarell > .container-lg {
+  max-width: none;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.aquarell__inner {
+  display: grid;
+  grid-template-columns: 375px 435px;
+  align-items: center;
+  gap: 301px;
+  padding: 40px 63px;
+  background: #4c3525;
+}
+
+.aquarell__image-frame {
+  width: 100%;
+  aspect-ratio: 375 / 419;
+  border: 1px solid #f8f3e9;
+  overflow: hidden;
+}
+
+.aquarell__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aquarell__content {
+  display: flex;
+  min-height: 410px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.aquarell__text {
+  display: flex;
+  min-height: 370px;
+  flex-direction: column;
+  justify-content: center;
+  color: #f8f3e9;
+}
+
+.aquarell__title {
+  margin: 0 0 44px;
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 72px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.aquarell__description {
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.aquarell__description p {
+  margin: 0;
+}
+
+.aquarell__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff7d2;
+  color: #4c3525;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.aquarell__cta:hover,
+.aquarell__cta:focus {
+  background: #f4eabf;
+  color: #4c3525;
+}
+
+@media (max-width: 1299.98px) {
+  .aquarell__inner {
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1fr);
+    gap: clamp(40px, 15vw, 180px);
+    padding-right: clamp(24px, 4.4vw, 63px);
+    padding-left: clamp(24px, 4.4vw, 63px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .aquarell__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  .aquarell__image-frame {
+    width: min(100%, 375px);
+    justify-self: center;
+  }
+
+  .aquarell__content {
+    width: min(100%, 435px);
+    min-height: 0;
+    justify-self: center;
+    gap: 32px;
+  }
+
+  .aquarell__text {
+    min-height: 0;
+  }
+
+  .aquarell__title {
+    margin-bottom: 28px;
+    font-size: 56px;
+  }
+}
+
 
