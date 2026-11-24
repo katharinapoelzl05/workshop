@@ -13,6 +13,31 @@ if (!is_array($navigation) || empty($navigation)) {
     ['title' => 'Contact', 'link' => ['url' => '#', 'target' => '_self']],
   ];
 }
+
+$home_index = null;
+foreach ($navigation as $index => $item) {
+  if (strcasecmp(trim((string) ($item['title'] ?? '')), 'Home') === 0) {
+    $home_index = $index;
+    break;
+  }
+}
+
+if ($home_index === null) {
+  array_unshift($navigation, [
+    'title' => 'Home',
+    'link' => ['url' => home_url('/'), 'target' => '_self'],
+  ]);
+} else {
+  $home_item = $navigation[$home_index];
+  $home_item['title'] = 'Home';
+  $home_item['link'] = is_array($home_item['link'] ?? null) ? $home_item['link'] : [];
+  if (empty($home_item['link']['url'])) {
+    $home_item['link']['url'] = home_url('/');
+  }
+
+  unset($navigation[$home_index]);
+  array_unshift($navigation, $home_item);
+}
 ?>
 
 <div class="header-with-logo__inner">
