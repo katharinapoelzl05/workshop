@@ -19,6 +19,7 @@ while (have_rows('page_modules')) : the_row();
     'footer',
     'header_with_logo',
     'about_us',
+    'can_you_relate',
   ];
   $layout_container = in_array($layout_name, $figma_full_width_layouts, true) ? 'none' : get_sub_field('container');
   $layout_padding_y = in_array($layout_name, $figma_full_width_layouts, true) ? 'py-0' : get_sub_field('padding_y');
@@ -72,6 +73,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'about_us':
       get_template_part('template-parts/flex/layout', 'about-us'); break;
+
+    case 'can_you_relate':
+      get_template_part('template-parts/flex/layout', 'can-you-relate'); break;
 
     case 'text_1col':
       get_template_part('template-parts/flex/layout', 'text-1col'); break;
