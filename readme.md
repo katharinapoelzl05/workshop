@@ -62,3 +62,4 @@ den PHP-Dateien dieses Themes.
 Für die Beispielseiten sollte unter **Einstellungen > Lesen** eine statische
 Startseite eingerichtet werden.
 # workshop
+# workshop
