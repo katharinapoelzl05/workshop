@@ -51,6 +51,9 @@ while (have_rows('page_modules')) : the_row();
     case 'footer':
       get_template_part('template-parts/flex/layout', 'footer'); break;
 
+    case 'header':
+      get_template_part('template-parts/flex/layout', 'header'); break;
+
     case 'text_1col':
       get_template_part('template-parts/flex/layout', 'text-1col'); break;
 
