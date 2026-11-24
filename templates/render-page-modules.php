@@ -15,6 +15,7 @@ while (have_rows('page_modules')) : the_row();
     'hero_basic_titelbild',
     'blue_background',
     'headline',
+    'galerie',
     'images',
     'footer',
     'header_with_logo',
