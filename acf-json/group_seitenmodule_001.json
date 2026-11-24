@@ -1535,6 +1535,47 @@
                     "acfe_flexible_settings_size": "medium",
                     "acfe_flexible_modal_edit_size": false
                 },
+                "layout_footer": {
+                    "key": "layout_footer",
+                    "name": "footer",
+                    "label": "Footer",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_footer_title",
+                            "label": "Titel",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "placeholder": "Independend organisation",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": [
+                        "Inhalte"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false
+                },
                 "layout_google_map": {
                     "key": "layout_google_map",
                     "name": "google_map",
@@ -1643,5 +1684,5 @@
             "json"
         ]
     },
-    "modified": 1795545065
+    "modified": 1795545279
 }
