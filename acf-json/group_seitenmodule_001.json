@@ -1357,6 +1357,94 @@
                     "acfe_flexible_settings_size": "medium",
                     "acfe_flexible_modal_edit_size": false
                 },
+                "layout_blue_background": {
+                    "key": "layout_blue_background",
+                    "name": "blue_background",
+                    "label": "blue background",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_blue_background_title",
+                            "label": "Titel",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "placeholder": "The Creative Affair",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_blue_background_text",
+                            "label": "Text",
+                            "name": "text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "placeholder": "",
+                            "rows": 5,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_blue_background_stamp",
+                            "label": "Briefmarken-Grafik",
+                            "name": "stamp",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "svg,png,jpg,jpeg",
+                            "allow_in_bindings": 1,
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false
+                },
                 "layout_google_map": {
                     "key": "layout_google_map",
                     "name": "google_map",
@@ -1465,5 +1553,5 @@
             "json"
         ]
     },
-    "modified": 1795527696
+    "modified": 1795543600
 }
