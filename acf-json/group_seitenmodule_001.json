@@ -1658,6 +1658,88 @@
                     "acfe_flexible_settings_size": "medium",
                     "acfe_flexible_modal_edit_size": false
                 },
+                "layout_header_with_logo": {
+                    "key": "layout_header_with_logo",
+                    "name": "header_with_logo",
+                    "label": "Header mit Logo",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_header_with_logo_navigation",
+                            "label": "Navigation",
+                            "name": "navigation",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "rows_per_page": 20,
+                            "button_label": "Menüpunkt hinzufügen",
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_header_with_logo_navigation_title",
+                                    "label": "Beschriftung",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_header_with_logo_navigation"
+                                },
+                                {
+                                    "key": "field_header_with_logo_navigation_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "allow_in_bindings": 1,
+                                    "parent_repeater": "field_header_with_logo_navigation"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": [
+                        "Inhalte"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false
+                },
                 "layout_google_map": {
                     "key": "layout_google_map",
                     "name": "google_map",
@@ -1766,5 +1848,5 @@
             "json"
         ]
     },
-    "modified": 1795545902
+    "modified": 1795552353
 }
