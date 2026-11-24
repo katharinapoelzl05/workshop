@@ -21,6 +21,7 @@ while (have_rows('page_modules')) : the_row();
     'about_us',
     'can_you_relate',
     'contact_sheet',
+    'linocut',
   ];
   $layout_container = in_array($layout_name, $figma_full_width_layouts, true) ? 'none' : get_sub_field('container');
   $layout_padding_y = in_array($layout_name, $figma_full_width_layouts, true) ? 'py-0' : get_sub_field('padding_y');
@@ -31,7 +32,7 @@ while (have_rows('page_modules')) : the_row();
     'container'  => $layout_container ?: 'container-lg',
     'padding_y'  => $layout_padding_y ?: 'py-5',
     'bg'         => get_sub_field('background') ?: 'none',
-    'id'         => get_sub_field('id-anchor') ?: '',
+    'id'         => get_sub_field('id-anchor') ?: ($layout_name === 'contact_sheet' ? 'contact_sheet' : ''),
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',
   ];
 
@@ -80,6 +81,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'contact_sheet':
       get_template_part('template-parts/flex/layout', 'contact-sheet'); break;
+
+    case 'linocut':
+      get_template_part('template-parts/flex/layout', 'linocut'); break;
 
     case 'text_1col':
       get_template_part('template-parts/flex/layout', 'text-1col'); break;
